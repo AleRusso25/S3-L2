@@ -80,6 +80,8 @@
       </h3>
     </footer>
     <script>
+
+
       /* ESERCIZIO 1
        Scrivi una funzione per cambiare il titolo della pagina in qualcos'altro
     */
@@ -130,8 +132,13 @@ changeUrls()
        Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
     */
 
-      const addToTheSecond = function () {}
-
+      const addToTheSecond = function () {
+        const secondList = document.getElementById ("secondList")
+        const newElement =document.createElement("li")
+        newElement.textContent= "4"
+        secondList.appendChild (newElement)
+      }
+      addToTheSecond()
       /* ESERCIZIO 6
        Scrivi una funzione che aggiunga un paragrafo al primo div
     */
@@ -140,7 +147,7 @@ changeUrls()
         const fristDiv = document.querySelector ("div")
         const newParagraf = document.createElement ("p")
         newParagraf.textContent ="contenuto del nuovo paragrafo "
-fristDiv.appendChild (newParagraf)
+        fristDiv.appendChild (newParagraf)
       }
       addParagraph ()
 
@@ -148,7 +155,11 @@ fristDiv.appendChild (newParagraf)
        Scrivi una funzione che faccia scomparire la prima lista non ordinata
     */
 
-      const hideFirstUl = function () {}
+      const hideFirstUl = function () {
+        const firstList = document.getElementById("firstList")
+        if ((firstList.style.display = "none")) {}
+      }
+       hideFirstUl()
 
       /* ESERCIZIO 8 
        Scrivi una funzione che renda verde il background di ogni lista non ordinata
